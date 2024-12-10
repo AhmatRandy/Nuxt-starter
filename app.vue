@@ -1,6 +1,10 @@
+<script lang="ts" setup>
+import DefaultLayout from "@/layouts/DefaultLayout.vue";
+const page = ref();
+</script>
+
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
+  <DefaultLayout>
+    <NuxtPage ref="page" />
+  </DefaultLayout>
 </template>
