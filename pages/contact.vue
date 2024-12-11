@@ -1,4 +1,5 @@
 <template>
+  <NuxtLoadingIndicator />
   <div class="contact-container">
     <h1 class="title">Contact Us</h1>
     <div class="contact-content">

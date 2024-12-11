@@ -3,12 +3,31 @@ const count = ref(0);
 </script>
 
 <template>
-  <header class="app-header">
-    <nav class="nav-container">
-      <NuxtLink to="/" class="nav-link">Home</NuxtLink>
-      <NuxtLink to="/about" class="nav-link">About</NuxtLink>
-      <NuxtLink to="/contact" class="nav-link">Contact</NuxtLink>
-      <NuxtLink to="/dynamic-layout" class="nav-link">Dynamic Layout</NuxtLink>
+  <header class="bg-gray-800 text-white p-4">
+    <nav class="flex justify-center">
+      <NuxtLink to="/" class="text-white decoration-none p-2 hover:bg-green-300"
+        >Home</NuxtLink
+      >
+      <NuxtLink
+        to="/about"
+        class="text-white decoration-none p-2 hover:bg-green-300"
+        >About</NuxtLink
+      >
+      <NuxtLink
+        to="/contact"
+        class="text-white decoration-none p-2 hover:bg-green-300"
+        >Contact</NuxtLink
+      >
+      <NuxtLink
+        to="/dynamic-layout"
+        class="text-white decoration-none p-2 hover:bg-green-300"
+        >Dynamic Layout</NuxtLink
+      >
+      <NuxtLink
+        to="/teleport"
+        class="text-white decoration-none p-2 hover:bg-green-300"
+        >Teleport</NuxtLink
+      >
     </nav>
   </header>
 </template>

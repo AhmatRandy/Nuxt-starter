@@ -4,6 +4,7 @@ const layout = "default"
 <template>
   <div class="home-container">
     <h1 class="title">Welcome to Nuxt Starter</h1>
+
     <div class="features-grid">
       <div class="feature-card">
         <h3>Vue 3</h3>
