@@ -1,11 +1,9 @@
-<script setup>
-import { useAppConfig } from "nuxt/app";
-const config = useAppConfig();
-</script>
+<script setup></script>
 
 <template>
   <div>
-    <h1>{{ config.siteName }}</h1>
-    <NuxtPage />
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>
