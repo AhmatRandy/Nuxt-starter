@@ -15,7 +15,7 @@
           <div
             class="w-full max-w-lg p-6 bg-gradient-to-r from-green-500 to-green-600 rounded-lg shadow-lg"
           >
-            <h3 class="text-xl font-bold text-white mb-2">SSR Teleport</h3>
+            <h3 class="text-xl font-bold text-red-600 mb-2">SSR Teleport</h3>
             <p class="text-green-50">
               Hello from Server-side teleport! This content is rendered on the
               server.

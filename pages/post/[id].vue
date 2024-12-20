@@ -1,21 +1,21 @@
 <script setup lang="ts">
 const route = useRoute();
-const id = ref(route.params.id);
-const { data: posts } = await useAsyncData(
-  "posts",
-  () => $fetch(`https://jsonplaceholder.typicode.com/posts/${id.value}`),
+
+const { data } = await useAsyncData(
+  "data",
+  () => $fetch(`https://jsonplaceholder.typicode.com/posts/${route.params.id}`),
   {
-    watch: [id],
+    watch: [route],
   }
 );
 
-console.log("data", posts);
+console.log("data", data);
 </script>
 
 <template>
   <div class="max-w-2xl mx-auto p-4 bg-white shadow-md rounded-lg">
-    <h1 class="text-2xl font-bold mb-2">{{ posts.title }}</h1>
-    <p class="text-gray-700 mb-4">{{ posts.body }}</p>
+    <h1 class="text-2xl font-bold mb-2">{{ data?.title }}</h1>
+    <p class="text-gray-700 mb-4">{{ data?.body }}</p>
     <div class="flex justify-between">
       <button
         @click="() => $router.push(`/useFetch`)"
