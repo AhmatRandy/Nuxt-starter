@@ -2,6 +2,7 @@
 const { status, data: count } = await useLazyAsyncData("count", () =>
   $fetch("/api/count")
 );
+const name = ref("");
 // console.log("data", data);
 
 watch(count, (newCount) => {
