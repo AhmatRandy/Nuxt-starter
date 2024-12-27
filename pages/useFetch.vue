@@ -4,7 +4,9 @@ import { comment } from "postcss";
 const query = ref<string>("");
 const comments = ref([]);
 
-const { data } = await useFetch("https://jsonplaceholder.typicode.com/posts");
+const { data, refresh } = await useFetch(
+  "https://jsonplaceholder.typicode.com/posts"
+);
 
 const router = useRouter();
 async function handleFormSubmit(event: any) {
@@ -28,6 +30,7 @@ async function handleFormSubmit(event: any) {
     <div class="flex gap-4">
       <div class="bg-white shadow-lg rounded-md">
         <h1>post data</h1>
+        <button @click="refresh()">refresh</button>
         <span
           v-for="item in data"
           :key="item.id"

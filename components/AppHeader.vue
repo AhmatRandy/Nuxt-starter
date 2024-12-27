@@ -28,6 +28,16 @@ const count = ref(0);
         class="text-white decoration-none p-2 hover:bg-green-300"
         >Teleport</NuxtLink
       >
+      <NuxtLink
+        to="/useFetch"
+        class="text-white decoration-none p-2 hover:bg-green-300"
+        >use fetch and $fetch</NuxtLink
+      >
+      <NuxtLink
+        to="/useAsyncData"
+        class="text-white decoration-none p-2 hover:bg-green-300"
+        >useAsyncData</NuxtLink
+      >
     </nav>
   </header>
 </template>
