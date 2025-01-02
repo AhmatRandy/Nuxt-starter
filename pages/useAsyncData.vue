@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const page = ref<string>("1");
+const page = ref<string>("");
 const { data: posts } = await useAsyncData(
   "posts",
   () =>
